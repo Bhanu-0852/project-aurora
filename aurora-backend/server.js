@@ -38,6 +38,12 @@ app.use('/api/memory', require('./src/routes/memory.routes'));
 app.use('/api/streaks', require('./src/routes/streak.routes'));
 app.use('/api/progress', require('./src/routes/progress.routes'));
 
+app.get('/api/test/users', async (req, res) => {
+  const User = require('./src/models/User');
+  const users = await User.find().select('_id name email');
+  res.json(users);
+});
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({ message: 'Route not found' });
