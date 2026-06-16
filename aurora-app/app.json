@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Aurora",
+    "slug": "aurora-health",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "scheme": "aurora",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "android": {
+      "package": "com.aurora.health",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0F1E"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.aurora.health"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "3e73838b-bc7e-40ca-9348-15625c820c47"
+      }
+    }
+  }
+}
